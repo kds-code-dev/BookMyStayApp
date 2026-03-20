@@ -5,7 +5,19 @@ import java.util.Queue;
 class Reservation {
     private String guestName;
     private String roomType;
+    int roomNumber;
 
+
+    Reservation(String guestName, int roomNumber) {
+        this.guestName = guestName;
+        this.roomNumber = roomNumber;
+    }
+
+    void confirmReservation() {
+        System.out.println("Reservation Confirmed!");
+        System.out.println("Guest Name: " + guestName);
+        System.out.println("Room Number: " + roomNumber);
+    }
 
     public Reservation(String guestName, String roomType) {
         this.guestName = guestName;

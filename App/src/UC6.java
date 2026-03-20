@@ -1,32 +1,7 @@
 import java.util.*;
 
-class Room {
-    int roomNumber;
-    boolean isAvailable;
 
-    Room(int roomNumber) {
-        this.roomNumber = roomNumber;
-        this.isAvailable = true;
-    }
-}
-
-class Reservation {
-    String guestName;
-    int roomNumber;
-
-    Reservation(String guestName, int roomNumber) {
-        this.guestName = guestName;
-        this.roomNumber = roomNumber;
-    }
-
-    void confirmReservation() {
-        System.out.println("Reservation Confirmed!");
-        System.out.println("Guest Name: " + guestName);
-        System.out.println("Room Number: " + roomNumber);
-    }
-}
-
-public class UseCase6HotelBookingApp {
+public class UC6 {
 
     static List<Room> rooms = new ArrayList<>();
 

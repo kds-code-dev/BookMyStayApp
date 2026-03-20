@@ -8,7 +8,13 @@ public abstract class Room {
     protected int beds;
     protected int size;
     protected double price;
+    int roomNumber;
+    boolean isAvailable;
 
+    Room(int roomNumber) {
+        this.roomNumber = roomNumber;
+        this.isAvailable = true;
+    }
     public Room(int beds, int size, double price) {
         this.beds = beds;
         this.size = size;
