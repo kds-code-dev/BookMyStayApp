@@ -1,5 +1,14 @@
 import java.util.*;
 
+class Room {
+    int roomNumber;
+    boolean isAvailable;
+
+    Room(int roomNumber) {
+        this.roomNumber = roomNumber;
+        this.isAvailable = true;
+    }
+}
 
 public class UC6 {
 
